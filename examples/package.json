@@ -2,12 +2,10 @@
   "name": "iris-ui-turbo",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --concurrency 20",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types",
-    "dev:host": "turbo run dev --filter=basic-nextjs-pages-router"
+    "nextjsstarter-install-build": "pnpm install && pnpm nextjsstarter-build:next",
+    "nextjsstarter-build:next": "turbo run build --filter=basic-nextjs-pages-router",
+    "nextjsstarter-start": "turbo run start --filter=basic-nextjs-pages-router",
+    "nextjsstarter-dev": "turbo run dev --filter=basic-nextjs-pages-router"
   },
   "devDependencies": {
     "@eslint/js": "^8.57.1",
