@@ -1,5 +1,5 @@
 {
-  "name": "iris-ui-turbo",
+  "name": "examples",
   "private": true,
   "scripts": {
     "nextjsstarter-install-build": "pnpm install && pnpm nextjsstarter-build:next",
@@ -7,30 +7,17 @@
     "nextjsstarter-start": "turbo run start --filter=basic-nextjs-pages-router",
     "nextjsstarter-dev": "turbo run dev --filter=basic-nextjs-pages-router"
   },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "devDependencies": {
-    "@eslint/js": "^8.57.1",
-    "eslint": "^8.57.1",
-    "prettier": "^3.7.4",
-    "turbo": "^2.6.3",
-    "typescript": "5.9.2"
+    "turbo": "^2.7.3"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=24.4.1",
+    "pnpm": ">=10.27.0"
   },
-  "packageManager": "npm@10.8.2",
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "babel-loader": "^10.0.0"
-  },
-  "peerDependencies": {
-    "react": "19.1.2",
-    "react-dom": "19.1.2"
-  },
-  "overrides": {
-    "react": "19.1.2",
-    "react-dom": "19.1.2",
-    "@types/react": "19.1.2",
-    "@types/react-dom": "19.1.2"
-  }
+  "packageManager": "pnpm@10.27.0",
+  "dependencies": {}
 }
