@@ -5,6 +5,8 @@ const SassAlias = require('sass-alias');
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  transpilePackages: ['@myorg/shared'],
+
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
 
@@ -118,8 +120,8 @@ const nextConfig = {
       '@fontawesome': path.join(process.cwd(), './node_modules', 'font-awesome'),
     }).getImporter(),
     // temporary measure until new versions of bootstrap and font-awesome released
-    quietDeps: true,    
-    silenceDeprecations: ["import", "legacy-js-api"],
+    quietDeps: true,
+    silenceDeprecations: ['import', 'legacy-js-api'],
   },
 };
 
