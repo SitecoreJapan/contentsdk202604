@@ -1,0 +1,3 @@
+packages:
+  - "basic-nextjs-pages-router/*"
+  - "shared/*"
