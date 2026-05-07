@@ -1,10 +1,10 @@
 {
-  "name": "content-sdk-nextjs",
+  "name": "basic-nextjs-pages-router",
   "description": "Application utilizing Content SDK and Next.js",
   "version": "1.0.0",
   "private": true,
   "config": {
-    "appName": "content-sdk-nextjs",
+    "appName": "basic-nextjs-pages-router",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",
     "language": "en",
     "template": "nextjs"
