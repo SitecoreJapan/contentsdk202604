@@ -1,7 +1,42 @@
 {
+  "name": "iris-ui-turbo",
   "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --concurrency 20",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "dev:host": "turbo run dev --filter=basic-nextjs-pages-router"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.1",
+    "eslint": "^8.57.1",
+    "prettier": "^3.7.4",
+    "turbo": "^2.6.3",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.8.2",
   "workspaces": [
     "examples/*",
-    "shared"
-  ]
+    "shared/*"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "babel-loader": "^10.0.0"
+  },
+  "peerDependencies": {
+    "react": "19.1.2",
+    "react-dom": "19.1.2"
+  },
+  "overrides": {
+    "react": "19.1.2",
+    "react-dom": "19.1.2",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2"
+  }
 }
