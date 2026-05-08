@@ -6,8 +6,8 @@
       "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
       "enabled": true,
       "type": "sxa",
-      "buildCommand": "install-build",
-      "runCommand": "start:app"
+      "buildCommand": "install-build:appa",
+      "runCommand": "start:appa"
     },
     "nextjsstarteb": {
       "path": "./examples",
@@ -15,8 +15,8 @@
       "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
       "enabled": true,
       "type": "sxa",
-      "buildCommand": "install-build:pagerouterb",
-      "runCommand": "start:pagerouterb"
+      "buildCommand": "install-build:appb",
+      "runCommand": "start:appb"
     }
   },
   "postActions": {

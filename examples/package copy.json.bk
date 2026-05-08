@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=24.4.1",
+    "pnpm": ">=10.27.0"
+  },
+  "scripts": {
+    "build:shared": "npm run build -w @myorg/shared-ui",
+    "install-build:pageroutera": "npm install && npm run build:shared && npm run build:pageroutera",
+    "build:pageroutera": "npm run build -w pageroutera",
+    "start:pageroutera": "npm run start -w pageroutera",
+    "dev:pageroutera": "npm run dev -w pageroutera",
+    "install-build:pagerouterb": "npm install && npm run build:shared && npm run build:pagerouterb",
+    "build:pagerouterb": "npm run build -w pagerouterb",
+    "start:pagerouterb": "npm run start -w pagerouterb",
+    "dev:pagerouterb": "npm run dev -w pagerouterb"
+  }
+}
