@@ -204,6 +204,9 @@ importers:
 
   shared/shared-ui:
     dependencies:
+      '@sitecore-content-sdk/nextjs':
+        specifier: ^1.0.0
+        version: 1.6.0(@sitecore-cloudsdk/core@0.5.8)(@sitecore-cloudsdk/events@0.5.8)(@sitecore-cloudsdk/personalize@0.5.8)(@sitecore-feaas/clientside@0.6.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(chai@6.2.2)(next@15.5.18(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(sass@1.99.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(sinon@22.0.0)(typescript@5.8.3)
       react:
         specifier: ^19
         version: 19.2.6
