@@ -12,7 +12,7 @@ importers:
     dependencies:
       '@myorg/shared-ui':
         specifier: workspace:*
-        version: link:../../packages/shared-ui
+        version: link:../../shared/shared-ui
       '@sitecore-cloudsdk/core':
         specifier: ^0.5.1
         version: 0.5.8
@@ -109,7 +109,7 @@ importers:
     dependencies:
       '@myorg/shared-ui':
         specifier: workspace:*
-        version: link:../../packages/shared-ui
+        version: link:../../shared/shared-ui
       '@sitecore-cloudsdk/core':
         specifier: ^0.5.1
         version: 0.5.8
@@ -202,7 +202,7 @@ importers:
         specifier: ~5.8.3
         version: 5.8.3
 
-  packages/shared-ui:
+  shared/shared-ui:
     dependencies:
       react:
         specifier: ^19.2.4
