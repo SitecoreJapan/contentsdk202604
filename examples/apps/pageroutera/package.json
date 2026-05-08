@@ -22,6 +22,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@myorg/shared-ui": "file:../../packages/shared-ui",
     "@sitecore-cloudsdk/core": "^0.5.1",
     "@sitecore-cloudsdk/events": "^0.5.1",
     "@sitecore-content-sdk/nextjs": "^1.0.0",
