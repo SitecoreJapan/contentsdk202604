@@ -5,7 +5,7 @@ import { Form } from '@sitecore-content-sdk/nextjs';
 
 // end of built-in components
 import * as PartialDesignDynamicPlaceholder from 'src/components/partial-design-dynamic-placeholder/PartialDesignDynamicPlaceholder';
-import { RichText, Image, Navigation, Container, Promo, RowSplitter, PageContent, ColumnSplitter } from '@myorg/shared-ui';
+import { RichText, Image, Navigation, Container, Promo, RowSplitter, PageContent, ColumnSplitter, Title } from '@myorg/shared-ui';
 
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BYOCWrapper', BYOCWrapper],
@@ -20,6 +20,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['RowSplitter', RowSplitter],
   ['PageContent', PageContent],
   ['ColumnSplitter', ColumnSplitter],
+  ['Title', Title],
 ]);
 
 export default componentMap;
