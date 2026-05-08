@@ -41,6 +41,7 @@ export default defineCliConfig({
             'RowSplitter',
             'PageContent',
             'ColumnSplitter',
+            'Title',
           ],
         },
       },
