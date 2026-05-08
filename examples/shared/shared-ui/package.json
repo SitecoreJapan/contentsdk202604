@@ -14,7 +14,8 @@
   },
   "peerDependencies": {
     "react": "^19",
-    "react-dom": "^19"
+    "react-dom": "^19",
+    "@sitecore-content-sdk/nextjs": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^19",
