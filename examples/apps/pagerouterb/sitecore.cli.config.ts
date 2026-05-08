@@ -23,9 +23,27 @@ export default defineCliConfig({
       }),
     ],
   },
-  // componentMap: {
-  //   paths: ['src/components'],
-  //   // Exclude content-sdk auxillary components
-  //   exclude: ['src/components/content-sdk/*'],
-  // },
+  componentMap: {
+    paths: ['src/components'],
+    // Exclude content-sdk auxillary components
+    exclude: ['src/components/content-sdk/*'],
+    componentImports: [
+      {
+        importName: 'RepoUI',
+        importInfo: {
+          importFrom: '@myorg/shared-ui',
+          namedImports: [
+            'RichText',
+            'Image',
+            'Navigation',
+            'Container',
+            'Promo',
+            'RowSplitter',
+            'PageContent',
+            'ColumnSplitter',
+          ],
+        },
+      },
+    ],
+  },
 });

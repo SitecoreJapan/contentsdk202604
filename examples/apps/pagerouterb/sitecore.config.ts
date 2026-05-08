@@ -19,7 +19,7 @@ export default defineConfig({
       apiHost: process.env.NEXT_PUBLIC_SITECORE_API_HOST || '',
     },
   },
-  defaultSite: process.env.NEXT_PUBLIC_DEFAULT_SITE_NAME,
+  defaultSite: process.env.NEXT_PUBLIC_DEFAULT_SITE_NAME || 'demo2',
   defaultLanguage: process.env.NEXT_PUBLIC_DEFAULT_LANGUAGE || 'en',
   editingSecret: process.env.SITECORE_EDITING_SECRET,
   redirects: {
@@ -27,7 +27,7 @@ export default defineConfig({
     locales: ['en'],
   },
   multisite: {
-    enabled: false,
+    enabled: true,
     useCookieResolution: () => process.env.VERCEL_ENV === 'preview',
   },
   personalize: {
