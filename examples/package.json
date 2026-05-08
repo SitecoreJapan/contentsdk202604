@@ -5,7 +5,13 @@
     "packages/*"
   ],
   "scripts": {
+    "install-build:pageroutera": "npm install && npm build:pageroutera",
+    "build:pageroutera": "npm run build -w pageroutera",
+    "start:pageroutera": "npm run start -w pageroutera",
     "dev:pageroutera": "npm run dev -w pageroutera",
+    "install-build:pagerouterb": "npm install && npm build:pagerouterb",
+    "build:pagerouterb": "npm run build -w pagerouterb",
+    "start:pagerouterb": "npm run start -w pagerouterb",
     "dev:pagerouterb": "npm run dev -w pagerouterb"
   }
 }
